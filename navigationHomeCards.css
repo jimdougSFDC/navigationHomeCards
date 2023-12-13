@@ -87,7 +87,8 @@
     width: 100%;
     border-radius: 5px;
     min-height: 325px;
-    height: 325px; /* Set your desired fixed height here */
+    max-height: 325px;
+    height: auto; /* Set your desired fixed height here */
     overflow: hidden;
      background: linear-gradient(to top right, var(--backgroundColor1) 50%, var(--backgroundColor2) 50%);
     border-bottom: 5px solid var(--borderBottomColor);

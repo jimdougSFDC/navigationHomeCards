@@ -1,0 +1,57 @@
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightning__Tab</target>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+
+            <property name="backgroundColor1" type="Color" default="Background Color 1"/>
+            <property name="backgroundColor2" type="Color" default="Background Color 2"/>
+            <property name="hoverBackgroundColor1" type="Color" default="Hover Background Color 1"/>
+            <property name="hoverBackgroundColor2" type="Color" default="Hover Background Color 2"/>
+            <property name="borderBottomColor" type="Color" label="Border Bottom Color" />
+
+            <property name="image1" type="String" default="add image URL" />
+            <property name="secondImage1" type="String" default="add secondary image URL" />
+            <property name="title1" type="String" default="add title" />
+            <property name="content1" type="String" default="add content" />
+            <property name="link1" type="String" default="add link" />
+
+            <property name="image2" type="String" default="add image URL" />
+            <property name="secondImage2" type="String" default="add secondary image URL" />
+            <property name="title2" type="String" default="add title" />
+            <property name="content2" type="String" default="add content" />
+            <property name="link2" type="String" default="add link" />
+
+            <property name="image3" type="String" default="add image URL" />
+            <property name="secondImage3" type="String" default="add secondary image URL" />
+            <property name="title3" type="String" default="add title" />
+            <property name="content3" type="String" default="add content" />
+            <property name="link3" type="String" default="add link" />
+
+            <property name="image4" type="String" default="add image URL" />
+            <property name="secondImage4" type="String" default="add secondary image URL" />
+            <property name="title4" type="String" default="add title" />
+            <property name="content4" type="String" default="add content" />
+            <property name="link4" type="String" default="add link" />
+
+            <property name="image5" type="String" default="add image URL" />
+            <property name="secondImage5" type="String" default="add secondary image URL" />
+            <property name="title5" type="String" default="add title" />
+            <property name="content5" type="String" default="add content" />
+            <property name="link5" type="String" default="add link" />
+
+            <property name="image6" type="String" default="add image URL" />
+            <property name="secondImage6" type="String" default="add image URL" />
+
+           
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

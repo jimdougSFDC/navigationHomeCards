@@ -1,0 +1,233 @@
+.knowhow-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    min-height: 200px;
+  }
+  
+  .column20 {
+    flex: 0 0 calc(50% - 10px);
+    margin-right: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .knowhow-tile1, .knowhow-tile2, .knowhow-tile3 {
+      box-sizing: border-box;
+  }
+  
+  @media (max-width: 780px) {
+  .column20 {
+    flex: 0 0 100%;
+    margin-right: 0;
+    width: 100%; /* This ensures the element takes full width */
+    margin-bottom: 20px; /* Keeps the original bottom margin for spacing */
+  }
+
+  .knowhow-articles {
+    padding: 0;
+  }
+
+  .knowhow-tile {
+    min-height: auto; /* Adjust if necessary to fit content */
+  }
+
+  /* You can keep your other styles inside this media query as needed */
+}
+
+.knowhow-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    min-height: 200px;
+  }
+  
+  .column20 {
+    flex: 0 0 calc(50% - 10px);
+    margin-right: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .knowhow-tile1, .knowhow-tile2, .knowhow-tile3 {
+      box-sizing: border-box;
+  }
+  
+  @media (max-width: 780px) {
+  .column20 {
+    flex: 0 0 100%;
+    margin-right: 0;
+    width: 100%; /* This ensures the element takes full width */
+    margin-bottom: 20px; /* Keeps the original bottom margin for spacing */
+  }
+
+  .knowhow-articles {
+    padding: 0;
+  }
+
+  .knowhow-tile {
+    min-height: auto; /* Adjust if necessary to fit content */
+  }
+
+  /* You can keep your other styles inside this media query as needed */
+}
+
+  
+  .knowhow-tile {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: 10px 8px 8px 0 rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    min-height: 325px;
+    height: 325px; /* Set your desired fixed height here */
+    overflow: hidden;
+     background: linear-gradient(to top right, var(--backgroundColor1) 50%, var(--backgroundColor2) 50%);
+    border-bottom: 5px solid var(--borderBottomColor);
+  }
+  
+  .knowhow-articles a:hover {
+      text-decoration: none; /* This will remove the underline */
+  }
+  
+ .knowhow-tile:hover {
+    background: linear-gradient(to top right, var(--hoverBackgroundColor1) 50%, var(--hoverBackgroundColor2) 50%);
+    transform: scale(1.05);
+}
+  
+  .knowhow-tile:hover, 
+  .knowhow-tile:hover .tile-content,
+  .knowhow-tile:hover .tile-header,
+  .knowhow-tile:hover .tile-title,
+  .knowhow-tile:hover .tile-link {
+    color: white; /* Set the font color to white on hover */
+  }
+  
+  .knowhow-tile:hover {
+    transform: scale(1.05);
+  }
+  
+  .tile-image {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .avatar-image {
+    max-width: 40px;
+    margin: 20px 10px;
+  }
+  
+  .secondary-image {
+      display: none;  /* Hide the secondary image by default */
+  }
+  
+  .knowhow-tile:hover .primary-image {
+      display: none;  /* Hide the primary image on hover */
+  }
+  
+  .knowhow-tile:hover .secondary-image {
+      display: block;  /* Show the secondary image on hover */
+  }
+  
+  
+  .tile-content {
+    padding: 20px;
+    color: #272727;
+    font-size: 0.9rem;
+  }
+  
+  .tile-image-avatar {
+    max-width: 40px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: -10;
+  }
+  
+  .tile-header {
+    font-size: 1.5rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #0e426e;
+    
+  }
+  
+  .tile-title {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+    color: #272727;
+    letter-spacing: 0.02rem;
+    min-height: 100px;
+  }
+  
+  .tile-link {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .readmore-arrow {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+  }
+  
+  .secondary-arrow {
+      display: none;
+  }
+  
+  .knowhow-tile:hover .primary-arrow {
+      display: none;
+  }
+  
+  .knowhow-tile:hover .secondary-arrow {
+      display: inline-block; /* or block depending on your layout */
+  }
+  
+  
+  
+  @media (min-width: 781px) {
+    .column20 {
+        width: calc(19% - 4px);
+        flex: 0 0 auto;
+        margin-right: 2px;
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .knowhow-articles {
+        padding: 0;
+    }
+    
+    .knowhow-tile {
+        min-height: auto;
+    }
+
+    .tile-content, .tile-link, .readmore-arrow {
+        display: none !important; /* Hiding the elements on mobile views */
+    }
+    
+    .tile-header-image-wrapper {
+        display: flex;
+        align-items: center; /* Aligns items vertically center in flex container */
+    }
+
+    .tile-header {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .tile-image-avatar {
+        max-width: 30px;
+        margin: 10px;
+    }
+}
